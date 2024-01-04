@@ -347,61 +347,61 @@ $eno+=1;
 echo "<input type='hidden' name='enov' id='enov' value=$eno>";
 echo "<table width='100%' border='0' style='border-collapse:collapse'>";
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Employee Id Assigned</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='45%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 $eno</td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 &nbsp</td>";
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Name of Employee</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='45%' style='text-align:left;'>
-<input type='text' name='ename' id='ename' placeholder='Employee Name...' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+echo "<td style='text-align:left;'>
+<input type='text' name='ename' id='ename' placeholder='Employee Name...' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
-echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 &nbsp</td>";
 echo "</tr>";
 
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Father's Name</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='45%' style='text-align:left;'>
-<input type='text' name='fname' id='fname' placeholder='Name of father...' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+echo "<td style='text-align:left;'>
+<input type='text' name='fname' id='fname' placeholder='Name of father...' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
-echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 &nbsp</td>";
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Employee's Gender</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='45%' style='text-align:left;'>";
+echo "<td style='text-align:left;'>";
 
 $queryG = "SELECT gender FROM settings where gender is not null";
 $resultG = mysqli_query($conn, $queryG);
@@ -428,46 +428,20 @@ echo "<?php echo $optionsG;?>";
 echo "</select>";
 
 echo "</td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 &nbsp</td>";
 echo "</tr>";
 
-
-/*
-$query3 = "SELECT gender FROM `cl` where gender is not null";
-$result3 = mysqli_query($conn, $query3);
-$options3 ="";
-$e=0;
-while($row3 = mysqli_fetch_array($result3))
-{
-	if ($e==0)
-	{
-	if ($row3['gender']=='MALE')
-		$options3 = $options3."<option value=$row3[gender] selected>$row3[gender]</option>";
-	else
-		$options3 = $options3."<option value=$row3[gender]>$row3[gender]</option>";
-	$e=1;
-	}
-	if ($row3['gender']=='MALE')
-		$options3 = $options3."<option value=$row3[gender] selected>$row3[gender]</option>";
-	else
-		$options3 = $options3."<option value=$row3[gender]>$row3[gender]</option>";
-}
-echo "<select name='sx' id='sx' style='width: 100px; height:25px; font-size:14pt;font-weight: bold' required>";
-echo "<option value='' disabled selected hidden></option>";
-echo "<?php echo $options3;?>";
-echo "</select>";
-*/
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
-echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td bgcolor='#D4EFDF' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Designation</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'><p style='display:inline;text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>";
+echo "<td style='text-align:left;'><p style='display:inline;text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>";
 $queryDS = "SELECT designation FROM settings where designation is not null order by designation";
 $resultDS = mysqli_query($conn, $queryDS);
 $optionsDS ="";
@@ -486,7 +460,7 @@ echo "<option value='' disabled selected hidden></option>";
 echo "<?php echo $optionsDS;?>";
 echo "</select>";
 echo "</td>";
-echo "<td width='14%' style='text-align:center'></td>";
+echo "<td  style='text-align:center'></td>";
 echo "</tr>";
 
 echo "<tr>";
@@ -497,12 +471,12 @@ echo "</tr>";
 
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
-echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td bgcolor='#D4EFDF' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Department</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'><p style='display:inline;text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>";
+echo "<td style='text-align:left;'><p style='display:inline;text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>";
 $queryDP = "SELECT department FROM settings where department is not null order by department";
 $resultDP = mysqli_query($conn, $queryDP);
 $optionsDP ="";
@@ -521,7 +495,7 @@ echo "<option value='' disabled selected hidden></option>";
 echo "<?php echo $optionsDP;?>";
 echo "</select>";
 echo "</td>";
-echo "<td width='14%' style='text-align:center'></td>";
+echo "<td style='text-align:center'></td>";
 echo "</tr>";
 
 echo "<tr>";
@@ -534,15 +508,15 @@ echo "</tr>";
 
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
-echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td bgcolor='#D4EFDF' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Basic Salary</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='number' name='basic' id='basic' placeholder='Basic Salary...' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+echo "<td  style='text-align:left;'>
+<input type='number' name='basic' id='basic' placeholder='Basic Salary...' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -550,15 +524,15 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Dearness Alowance (%)</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='number' name='da' id='da' placeholder='Dearness Allowance' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+echo "<td  style='text-align:left;'>
+<input type='number' name='da' id='da' placeholder='Dearness Allowance' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -566,15 +540,15 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Provident Fund (12%)</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='number' readonly name='pf' id='pf' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' value='12'>
+echo "<td  style='text-align:left;'>
+<input type='number' readonly name='pf' id='pf' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' value='12'>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -582,15 +556,15 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 House rent Allowance</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
 echo "<td width='70%' style='text-align:left;'>
-<input type='number' name='hra' id='hra' placeholder='House Rent Allowance' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+<input type='number' name='hra' id='hra' placeholder='House Rent Allowance' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -598,15 +572,15 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Mobile No</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='number' name='phone' id='phone' placeholder='Mobile no' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' min='1000000000' max='9999999999' required>
+echo "<td  style='text-align:left;'>
+<input type='number' name='phone' id='phone' placeholder='Mobile no' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' min='1000000000' max='9999999999' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -614,31 +588,39 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Aadhar No.</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='number' name='aadhar' id='aadhar' placeholder='Aadhar No' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' min='100000000000' max='999999999999' required>
+echo "<td  style='text-align:left;'>
+<input type='number' name='aadhar' id='aadhar' placeholder='Aadhar No' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' min='100000000000' max='999999999999' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 &nbsp</td>";
 echo "</tr>";
 
+
+//$date = strtotime('Y-m-d',$dt);
+$max_date= date('Y-m-d', strtotime($dt. ' - 21 year'));
+$min_date= date('Y-m-d', strtotime($dt. ' - 40 year'));
+
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Date of Birth</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='date' name='dob' id='dob' placeholder='Date of Birth' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+echo "<td  style='text-align:left;'>
+<input type='date' name='dob' id='dob' placeholder='Date of Birth' 
+style='width: 40%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' 
+max='$max_date' min='$min_date' required><br>
+<i><b>Age limit : 21 - 40 Years</b></i>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -647,31 +629,15 @@ echo "</tr>";
 
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
-echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
-Date of Retirement</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
-:</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='date' name='dor' id='dor' readonly style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;'>
-</td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
-echo "</tr>";
-echo "<tr>";
-echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
-&nbsp</td>";
-echo "</tr>";
-
-echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Date of Joining</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='date' name='doj' id='doj' placeholder='Date of Joining' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' value='$dt' required>
+echo "<td  style='text-align:left;'>
+<input type='date' name='doj' id='doj' placeholder='Date of Joining' style='width: 40%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' value='$dt' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -679,15 +645,15 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "</tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Email Id</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left;'>
-<input type='email' name='email' id='email' placeholder='Email Id' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
+echo "<td  style='text-align:left;'>
+<input type='email' name='email' id='email' placeholder='Email Id' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
@@ -701,16 +667,16 @@ echo "</tr>";
 
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td width='10%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Correspondence Address</td>";
 echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
 
-echo "<td width='70%' style='text-align:left;'>
-<input type='text' name='cad' id='cad' placeholder='Correspondence Address' style='width: 100%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' oninput='myaddress()' required>
+echo "<td  style='text-align:left;'>
+<input type='text' name='cad' id='cad' placeholder='Correspondence Address' style='width: 80%; text-align:left;height:25px; font-size:15pt;font-weight: bold;' oninput='myaddress()' required>
 </td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td width='10%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<tr>";
 
 echo "<tr>";
@@ -718,33 +684,30 @@ echo "<td width='100%' colspan='5' style='text-align:center'><p style='display:i
 echo "<tr>";
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<td bgcolor='#D4EFDF' width='25%' style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 Permanent Address</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
 :</td>";
-echo "<td width='70%' style='text-align:left'><input type='text' name='pad' id='pad' placeholder='Permanent Address...' style='width: 100%; height:30px;text-align:left;height:25px; font-size:13pt;font-weight: bold;'></td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:left'><input type='text' name='pad' id='pad' placeholder='Permanent Address...' style='width: 80%; height:30px;text-align:left;height:25px; font-size:13pt;font-weight: bold;'></td>";
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<tr>";
 
 
 echo "<tr>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";echo "<td width='18%' style='text-align:center;'><p style='display:inline; font-size:18px;font-weight: bold;color:red;'>";
-echo "<input type='checkbox' id='padd' name='padd' style='width: 30px; height: 20px;' onclick='myaddress()'>";
-echo "<label for='padd' color='red'>Please (&#10004) for same</label><br>
+echo "<td  style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td style='text-align:center;'><p style='display:inline; font-size:18px;font-weight: bold;color:red;'>
+<input type='checkbox' id='padd' name='padd' style='width: 30px; height: 20px;' onclick='myaddress()'>";
+echo "<label for='padd' color='red'>Please (&#10004) for same</label><br></td>";
+
+echo "<td style='text-align:left;padding-left:5px;'><p style='display:inline; font-size:18px;font-weight: bold'>
 </td>";
-echo "<td width='25%' style='text-align:left;'><p style='display:inline; font-size:18px;font-weight: bold'></td>";echo "<td width='18%' style='text-align:center;'><p style='display:inline; font-size:18px;font-weight: bold;color:red;'>";
-echo "</td>";
-echo "<td width='2%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'>
-</td>";
-echo "<td width='70%' style='text-align:left'></td>";
-echo "<td width='14%' style='text-align:center'><p style='display:inline; font-size:18px;font-weight: bold'></td>";echo "<td width='18%' style='text-align:center;'><p style='display:inline; font-size:18px;font-weight: bold;color:red;'></td>";
+echo "<td  style='text-align:left;'>
+<p style='display:inline; font-size:18px;font-weight: bold'></td>";
+echo "<td  style='text-align:center;'></td>";
+echo "<td  style='text-align:center'>
+<p style='display:inline; font-size:18px;font-weight: bold'></td>";
 echo "<tr>";
-
-
-
-
-
 
 
 
@@ -758,15 +721,6 @@ echo "</table>";
 
 
 ?>
-
-<input type="hidden" name="rcodev" id="rcodev">
-<input type="hidden" name="bamtv" id="bamtv">
-<input type="hidden" name="bsv" id="bsv">
-<input type="hidden" name="btv" id="btv">
-<input type="hidden" name="bfv" id="bfv">
-<input type="hidden" name="bnv" id="bnv">
-
- 
 <table width="100%" border="0" style="border-collapse:collapse">
 <tr>
 <td width="30%"></td>
